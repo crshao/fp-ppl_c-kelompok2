@@ -25,7 +25,7 @@ class PengeluaranController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**

@@ -1,6 +1,5 @@
 @extends('layouts/layout')
 
-
 @section('title', 'FP PPL C - Kelompok 2')
     
 @section('container')

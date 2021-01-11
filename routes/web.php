@@ -18,5 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/create', [PengeluaranController::class, 'create']);
 Route::get('/', [PengeluaranController::class, 'index']);
 Route::delete('/{pengeluaran}', [PengeluaranController::class, 'destroy']);
