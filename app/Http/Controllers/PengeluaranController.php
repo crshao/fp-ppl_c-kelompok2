@@ -14,7 +14,8 @@ class PengeluaranController extends Controller
      */
     public function index()
     {
-        //
+        return Pengeluaran::all();
+        return view('index');
     }
 
     /**

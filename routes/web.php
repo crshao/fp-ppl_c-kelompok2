@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PengeluaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'PengeluaranController@index');
+Route::get('/', [PengeluaranController::class, 'index']);
 Route::delete('/{pengeluaran}', 'PengeluaranController@destroy');

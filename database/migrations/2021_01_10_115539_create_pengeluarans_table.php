@@ -16,6 +16,13 @@ class CreatePengeluaransTable extends Migration
         Schema::create('pengeluarans', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            
+            $table->date('Tanggal');
+            $table->string('Nama Barang', 50);
+            $table->string('Nama Toko', 50);
+            $table->text('Deskripsi');
+            $table->string('Kategori', 50);
+            $table->integer('Jumlah');
         });
     }
 
