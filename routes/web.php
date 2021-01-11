@@ -19,4 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('/', [PengeluaranController::class, 'index']);
-Route::delete('/{pengeluaran}', 'PengeluaranController@destroy');
+Route::delete('/{pengeluaran}', [PengeluaranController::class, 'destroy']);

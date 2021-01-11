@@ -24,6 +24,7 @@
                 </tr>
             </thead>
             <tbody>
+                <button class="btn btn-primary">Tambah</button>
                 @foreach ($pengeluarans as $pengeluaran)
                     <tr>
                         <th scope="row">{{ $pengeluaran['id'] }}</th>
@@ -33,7 +34,11 @@
                         <td>{{ $pengeluaran['Deskripsi'] }}</td>
                         <td>{{ $pengeluaran['Kategori'] }}</td>
                         <td>{{ $pengeluaran['Jumlah'] }}</td>
-                        <td>Action</td>
+                        <td>
+                            <a href="#" class="btn btn-info">Lihat</a>
+                            <a href="#" class="btn btn-success">Edit</a>
+                            <a href="/{{ $pengeluaran['id'] }}" class="btn btn-danger">Hapus</a>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>
