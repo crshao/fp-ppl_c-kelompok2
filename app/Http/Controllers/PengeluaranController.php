@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pengeluaran;
 use Illuminate\Http\Request;
+use DB;
 
 class PengeluaranController extends Controller
 {
@@ -37,7 +38,7 @@ class PengeluaranController extends Controller
     public function store(Request $request)
     {
         Pengeluaran::create($request->all());
-        return redirect('/')->with('status', 'Data Pengeluaran berhasil ditambahkan!');
+        return redirect('/');
     }
 
     /**
@@ -80,8 +81,9 @@ class PengeluaranController extends Controller
      * @param  \App\Models\Pengeluaran  $pengeluaran
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pengeluaran $pengeluaran)
+    public function destroy($pengeluaran)
     {
-        //
+        DB::table('pengeluarans')->where('id',$pengeluaran)->delete();
+        return redirect('/');
     }
 }
