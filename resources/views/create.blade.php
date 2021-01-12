@@ -7,15 +7,13 @@
         <div class="row">
             <div class="col-10">
                 <h2 class="text-center mt-3">Form Pengeluaran</h2>
-
-
-                <form method="post" action="/students">
+                <form method="post" action="/">
                     @csrf
                     <div class="form-group">
-                        <label for="Tanggal">Tanggal</label>
-                        <input type="text" class="form-control @error('Tanggal') is-invalid
-                        @enderror" id="Tanggal" placeholder="Masukkan Tanggal" name="Tanggal" value="{{ old('Tanggal') }}">
-                        @error('Tanggal')
+                        <label for="tanggal">tanggal</label>
+                        <input type="date" class="form-control @error('tanggal') is-invalid
+                        @enderror" id="tanggal" placeholder="Masukkan tanggal" name="tanggal" value="{{ old('tanggal') }}">
+                        @error('tanggal')
                             <div class="invalid-feedback">{{$message}}</div>
                         @enderror
                     </div>
@@ -29,7 +27,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="nama_barang">Nama Barang</label>
+                        <label for="nama_barang">nama_barang</label>
                         <input type="text" class="form-control" id="nama_barang" placeholder="Masukkan Nama Barang"
                         name="nama_barang" value="{{ old('nama_barang') }}">
                     </div>
@@ -47,17 +45,10 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="qty">Qty</label>
-                        <input type="text" class="form-control" id="qty" placeholder="Masukkan Qty"
-                        name="qty" value="{{ old('qty') }}">
+                        <label for="jumlah">Jumlah</label>
+                        <input type="number" class="form-control" id="jumlah" placeholder="Masukkan Harga"
+                        name="jumlah" value="{{ old('jumlah') }}">
                     </div>
-
-                    <div class="form-group">
-                        <label for="harga_satuan">Harga Satuan</label>
-                        <input type="text" class="form-control" id="harga_satuan" placeholder="Masukkan Harga Satuan"
-                        name="harga_satuan" value="{{ old('harga_satuan') }}">
-                    </div>
-
                     <button type="submit" class="btn btn-primary my-3">Simpan Data</button>
                 </form>
             </div>

@@ -20,4 +20,5 @@ Route::get('/', function () {
 
 Route::get('/create', [PengeluaranController::class, 'create']);
 Route::get('/', [PengeluaranController::class, 'index']);
+Route::post('/', [PengeluaranController::class, 'store']);
 Route::delete('/{pengeluaran}', [PengeluaranController::class, 'destroy']);

@@ -16,39 +16,39 @@ class PengeluaranSeed extends Seeder
     public function run()
     {
         DB::table('pengeluarans')->insert([
-            'Tanggal' => Carbon::now()->format('Y-m-d'),
-            'Nama Barang' => 'Semen',
-            'Nama Toko' => 'Toko Rahayu',
-            'Deskripsi' => 'Untuk pembangunan',
-            'Kategori' => 'Material',
-            'Jumlah' => 120000,
+            'tanggal' => Carbon::now()->format('Y-m-d'),
+            'nama_barang' => 'Semen',
+            'nama_toko' => 'Toko Rahayu',
+            'deskripsi' => 'Untuk pembangunan',
+            'kategori' => 'Material',
+            'jumlah' => 120000,
         ]);
 
         DB::table('pengeluarans')->insert([
-            'Tanggal' => Carbon::now()->format('Y-m-d'),
-            'Nama Barang' => 'Semen',
-            'Nama Toko' => 'Toko Belakang',
-            'Deskripsi' => 'Untuk disimpan',
-            'Kategori' => 'Material',
-            'Jumlah' => 120000,
+            'tanggal' => Carbon::now()->format('Y-m-d'),
+            'nama_barang' => 'Semen',
+            'nama_toko' => 'Toko Belakang',
+            'deskripsi' => 'Untuk disimpan',
+            'kategori' => 'Material',
+            'jumlah' => 120000,
         ]);
 
         DB::table('pengeluarans')->insert([
-            'Tanggal' => Carbon::now()->format('Y-m-d'),
-            'Nama Barang' => 'Laptop',
-            'Nama Toko' => 'Toko Rahayu',
-            'Deskripsi' => 'Laptop Baru',
-            'Kategori' => 'Inventaris',
-            'Jumlah' => 4000000,
+            'tanggal' => Carbon::now()->format('Y-m-d'),
+            'nama_barang' => 'Laptop',
+            'nama_toko' => 'Toko Rahayu',
+            'deskripsi' => 'Laptop Baru',
+            'kategori' => 'Inventaris',
+            'jumlah' => 4000000,
         ]);
 
         DB::table('pengeluarans')->insert([
-            'Tanggal' => Carbon::now()->format('Y-m-d'),
-            'Nama Barang' => 'HP',
-            'Nama Toko' => 'Toko Depan',
-            'Deskripsi' => 'HP Baru',
-            'Kategori' => 'Inventaris',
-            'Jumlah' => 3000000,
+            'tanggal' => Carbon::now()->format('Y-m-d'),
+            'nama_barang' => 'HP',
+            'nama_toko' => 'Toko Depan',
+            'deskripsi' => 'HP Baru',
+            'kategori' => 'Inventaris',
+            'jumlah' => 3000000,
         ]);
     }
 }

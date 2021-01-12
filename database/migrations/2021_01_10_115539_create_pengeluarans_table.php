@@ -17,12 +17,12 @@ class CreatePengeluaransTable extends Migration
             $table->id();
             $table->timestamps();
             
-            $table->date('Tanggal');
-            $table->string('Nama Barang', 50);
-            $table->string('Nama Toko', 50);
-            $table->text('Deskripsi');
-            $table->string('Kategori', 50);
-            $table->integer('Jumlah');
+            $table->date('tanggal');
+            $table->string('nama_barang', 50);
+            $table->string('nama_toko', 50);
+            $table->text('deskripsi');
+            $table->string('kategori', 50);
+            $table->integer('jumlah');
         });
     }
 

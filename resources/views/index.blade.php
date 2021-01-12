@@ -23,16 +23,16 @@
                 </tr>
             </thead>
             <tbody>
-                <button class="btn btn-primary">Tambah</button>
+                <a class="btn btn-primary" href="/create">Tambah</a>
                 @foreach ($pengeluarans as $pengeluaran)
                     <tr>
                         <th scope="row">{{ $pengeluaran['id'] }}</th>
-                        <td>{{ $pengeluaran['Tanggal'] }}</td>
-                        <td>{{ $pengeluaran['Nama Barang'] }}</td>
-                        <td>{{ $pengeluaran['Nama Toko'] }}</td>
-                        <td>{{ $pengeluaran['Deskripsi'] }}</td>
-                        <td>{{ $pengeluaran['Kategori'] }}</td>
-                        <td>{{ $pengeluaran['Jumlah'] }}</td>
+                        <td>{{ $pengeluaran['tanggal'] }}</td>
+                        <td>{{ $pengeluaran['nama_barang'] }}</td>
+                        <td>{{ $pengeluaran['nama_toko'] }}</td>
+                        <td>{{ $pengeluaran['deskripsi'] }}</td>
+                        <td>{{ $pengeluaran['kategori'] }}</td>
+                        <td>{{ $pengeluaran['jumlah'] }}</td>
                         <td>
                             <a href="#" class="btn btn-info">Lihat</a>
                             <a href="#" class="btn btn-success">Edit</a>

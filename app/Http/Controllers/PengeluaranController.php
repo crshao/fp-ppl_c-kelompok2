@@ -36,7 +36,8 @@ class PengeluaranController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Pengeluaran::create($request->all());
+        return redirect('/')->with('status', 'Data Pengeluaran berhasil ditambahkan!');
     }
 
     /**
