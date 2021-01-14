@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="nama_barang">nama_barang</label>
+                        <label for="nama_barang">Nama Barang</label>
                         <input type="text" class="form-control" id="nama_barang" placeholder="Masukkan Nama Barang"
                         name="nama_barang" value="{{ old('nama_barang') }}">
                     </div>
